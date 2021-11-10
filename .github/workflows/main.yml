@@ -2,7 +2,7 @@ name: py
 
 on:
   schedule:
-    - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+    - cron: "* * * * *" #runs at 00:00 UTC everyday
     
 jobs:
   build:
@@ -15,6 +15,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
-      - name: execute py script # run the run.py to get the latest data
+      - name: execute py script # run the tagging_ec2.py to add or update tags
         run: |
-          python github-actions-ec2-tagging.py
+          pip3 install boto3
+          python tagging_ec2.py
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY : ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          

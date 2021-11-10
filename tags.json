@@ -1,5 +1,4 @@
 {
-    "Key": "Value",
-    "Name" : "Instance",
-    "Env" : "Dev"
+    "Env" : "UAT",
+    "Key": "Value"
 }

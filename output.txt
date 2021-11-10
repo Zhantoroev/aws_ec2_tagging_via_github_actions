@@ -1,5 +1,0 @@
-i-000cb0809c72b30c6   [{'Key': 'Name', 'Value': 'Instance'}, {'Key': 'Key', 'Value': 'Value'}, {'Key': 'Env', 'Value': 'Dev'}]
-i-0fcd29536e6b5b331   [{'Key': 'Key', 'Value': 'Value'}, {'Key': 'Env', 'Value': 'Dev'}, {'Key': 'Name', 'Value': 'Instance'}]
-i-04b0b14d270b21970   [{'Key': 'Name', 'Value': 'Instance'}, {'Key': 'Key', 'Value': 'Value'}, {'Key': 'Env', 'Value': 'Dev'}]
-i-0bbc9017671a2c9ca   [{'Key': 'Name', 'Value': 'SmthElse'}, {'Key': 'Env', 'Value': 'Dev'}]
-i-00658f1b89a14a5ad   [{'Key': 'Name', 'Value': 'Else'}]
