@@ -1,4 +1,4 @@
 {
-    "Env" : "UAT",
+    "Env" : "PROD",
     "Key": "Value"
 }
