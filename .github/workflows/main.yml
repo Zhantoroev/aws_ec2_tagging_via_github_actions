@@ -13,11 +13,15 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
+      - name: aws configure
+        uses: aws-actions/configure-aws-credential@v1
+        with:
+          aws-access-key-id     : ${{ secret.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key : ${{ secret.AWS_SECRET_ACCESS_KEY }}
+          aws-region            : ${{ secret.AWS_REGION }}
+
       - name: execute py script # run the tagging_ec2.py to add or update tags
         run: |
           pip3 install boto3
           python tagging_ec2.py
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY : ${{ secret.AWS_SECRET_ACCESS_KEY }}
           
