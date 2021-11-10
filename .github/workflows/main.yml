@@ -1,6 +1,6 @@
 name: py
 on:
-  pull : 
+  push : 
     branches: ['main']
 jobs:
   build:
