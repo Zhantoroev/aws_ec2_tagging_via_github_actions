@@ -26,3 +26,4 @@ ec2.create_tags( Resources = instance_ids, Tags = tags)
 with open('output.txt', "w") as myfile:
     for instance in ec2.instances.all():
         myfile.write(instance.id + "   " + str(instance.tags) + '\n')
+print('Done')
