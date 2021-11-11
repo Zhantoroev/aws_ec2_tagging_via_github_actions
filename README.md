@@ -19,20 +19,17 @@ Example content of tags.json file:
 
 For **Github Actions** there is a main.yml file. In line 4, for cron job you can specify a time to schedule run this python code. 
 Lines 18-21. Add your credentials like AWS ACCESS KEY, SECRET ACCESS KEY and REGION NAME to Github Secrets.
-
-`
+<br/>
 
 ### **NOTE:** Python code will work on the region according to your credentials (REGION NAME)
-\
-\
-\
-`
+
+<br/><br/>
 ## RUN **without** Github Actions: 
 <pre>
-clone repo and open it. In terminal type 
-<pre>
-python tagging_ec2.py
-</pre>
+clone repo and open it. In terminal type:
+    <div  class="bg-yellow mb-2">
+    python tagging_ec2.py
+    </div>
 If everything works fine, it will print "done"
 </pre>
 
