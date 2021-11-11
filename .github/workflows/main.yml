@@ -1,7 +1,7 @@
 name: py
 on:
   schedule : 
-    - cron: "3 * * * *"
+    - cron: "1 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
